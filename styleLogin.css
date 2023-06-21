@@ -1,0 +1,79 @@
+*{
+    justify-content: center; 
+}
+body{
+    background: linear-gradient(90deg, rgba(249,121,108,1) 0%, rgba(244,185,179,1) 41%, rgba(249,121,108,1) 100%);
+}
+.form_bg{
+    align-items: center;
+    display:flex;
+    height:100vh;
+}
+
+.form-group{
+    margin:0 0 10px;
+    position:relative;
+}
+.form-group i{
+    position: absolute;
+    left:20px;
+    transform: translate(-50%); 
+    padding:10px;
+    background: #de3027;
+    color: white;
+    min-width: 30px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+.form-control{
+    height:40px;
+    padding: 2px 15px 2px 70px;
+    border-radius:50px;
+    border:2px solid #de3027;
+    font-family: 'Akaya Telivigala';
+}
+h3{
+    font-family: 'UnifrakturCook';
+    font-size:50px;
+    color:#6e2824;
+}
+.btn{
+    background: #de3027;
+    width:100%;
+    color:white;
+    border-radius: 50px;
+    border :2px solid #6e2824;;
+}
+.btn:hover{
+    background-color: #de3027;
+    opacity: 0.8;
+    color:white;
+    border :2px solid #6e2824;
+}
+h6,a{
+    font-family: 'Akaya Telivigala';
+}
+.backicon i{
+   margin-top: 15px;
+   margin-right: 50px;
+   font-size: 30px;
+   color:#4E5364 ;    
+}
+.backicon{
+    margin-right: 80px;
+}
+.footbtn a{
+    text-decoration: none;
+    color:#6e2824
+}
+.footbtn{
+    background-color:transparent;
+    border:2px solid #6e2824;
+    border-radius: 10px;
+}
+.footbtn:hover{
+    background-color: #6e2824;
+}
+.footbtn a:hover{
+    color:white;
+}

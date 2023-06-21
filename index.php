@@ -29,6 +29,7 @@ session_start();
       <div class="other-links">
             <button id="btn-login"><a href="login.php">Login</a></button>
             <button id="btn-signup"><a href="signup.php">Sign up</a></button>
+          
   </div>
       
 
@@ -47,6 +48,9 @@ session_start();
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="clothe.php">Clothe</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="HomeProducts.php">products</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -137,7 +141,7 @@ session_start();
 
     <!-- product cards -->
     <div class="container" id="product-cards">
-        <h1 class="text-center">PRODUCT</h1>
+        <h1 class="text-center">Best seller</h1>
         <div class="row" style="margin-top: 30px;">
             <div class="col-md-3 py-3 py-md-0">
                 <div class="card">

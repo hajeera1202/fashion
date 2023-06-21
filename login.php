@@ -9,7 +9,7 @@ include 'connect.php';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion</title>
     <link rel="shortcut icon" type="image" href="./image/logo2.png">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleLogin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- bootstrap links -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -36,13 +36,14 @@ if(isset($_POST['submit'])){
 
     if($email_count){
         $pass = mysqli_fetch_assoc($query);
-
+        $_SESSION['user_id'] = $pass['id'];
         
         if (md5($password) === $pass["Password"]) {
        
             ?>
             <script>
                 alert("Successful")
+                window.location.href = "index.php"
             </script>
             <?php
              
@@ -65,6 +66,12 @@ if(isset($_POST['submit'])){
     }
 
 ?>
+<div class="form_bg text-center">
+       
+       <div class="container">
+       
+       <div class="row">
+       <div class="col-12 col-md-12 col-lg-6 box2 ">
  <!DOCTYPE html>
     <html>
     <head>
@@ -81,12 +88,10 @@ if(isset($_POST['submit'])){
             <input type="password" name="password" required>
             <br><br>
             <input type="submit" value="login" name="submit">
-            <div>
-              <a href = "change.php"> Change Password </a>
-            </div>
-            <div>
-              <a href = "forgot.php"> Forgot Password </a>
-            </div> 
+            <div >
+    <button class="footbtn"> <a href="forgot.php"> Forgot Password?</a></button>&nbsp;&nbsp;
+    <button class="footbtn"> <a href="change.php"> Change Password</a></button>
+    </div>
         </form>
     </body>
     </html>
